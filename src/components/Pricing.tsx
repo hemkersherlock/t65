@@ -129,6 +129,10 @@ const Pricing = () => {
                 </ul>
 
                 <button className={`w-full py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${plan.buttonClass}`}>
+                <button 
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className={`w-full py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${plan.buttonClass}`}
+                >
                   {plan.buttonText}
                 </button>
               </div>

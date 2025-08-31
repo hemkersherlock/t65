@@ -42,7 +42,10 @@ const Header = () => {
             <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
               Contact
             </a>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors">
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors"
+            >
               Secure My Course
             </button>
           </nav>
@@ -72,7 +75,10 @@ const Header = () => {
               <a href="#contact" className="text-gray-300 hover:text-white transition-colors px-4">
                 Contact
               </a>
-              <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors mx-4">
+              <button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors mx-4"
+              >
                 Secure My Course
               </button>
             </nav>
