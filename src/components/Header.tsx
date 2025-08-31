@@ -51,12 +51,12 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
+  <header className="bg-slate-900 text-white sticky top-0 z-50">
             className="md:hidden text-white"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      <div className="flex justify-between items-center py-3 md:py-4">
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <span className="text-lg md:text-xl font-bold">NeverLeaked</span>
         </div>
 
         {/* Mobile Navigation */}
@@ -75,13 +75,13 @@ const Header = () => {
               <a href="#contact" className="text-gray-300 hover:text-white transition-colors px-4">
                 Contact
               </a>
-              <button 
+        <nav className="hidden lg:flex space-x-8">
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors mx-4"
               >
                 Secure My Course
               </button>
-            </nav>
+        <button className="lg:hidden">
           </div>
         )}
       </div>

@@ -35,7 +35,7 @@ const ReportPiracy = () => {
               <Phone className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Emergency Hotline</h3>
-            <p className="text-gray-300">1-800-NO-PIRACY</p>
+            <p className="text-gray-300">+1 (831) 263-6018</p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">

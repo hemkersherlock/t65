@@ -68,28 +68,28 @@ const Hero = () => {
               
               <div className="space-y-6">
                 <div className="flex items-center justify-between p-4 bg-slate-700/50 rounded-lg border border-slate-600">
-                  <div className="flex items-center space-x-3">
+  <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white py-12 md:py-20">
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                    <span className="text-white font-medium">Course Monitoring Active</span>
-                  </div>
+      <div className="text-center max-w-4xl mx-auto px-4">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
                   <span className="text-green-400 text-sm">LIVE</span>
                 </div>
-
+        <p className="text-lg md:text-xl text-blue-100 mb-6 md:mb-8 leading-relaxed">
                 <div className="space-y-3">
                   <div className="flex items-center justify-between p-3 bg-red-600/10 border border-red-600/30 rounded-lg">
-                    <span className="text-gray-300">Telegram Groups Scanned</span>
-                    <span className="text-red-400 font-bold">247</span>
+        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-3 gap-4 md:gap-8 text-center">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-8 md:mb-12">
+              <div className="text-lg md:text-2xl font-bold text-white mb-1">94%</div>
+              <div className="text-blue-200 text-xs md:text-sm">Success Rate</div>
+            className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg transition duration-200 transform hover:scale-105 text-sm md:text-base"
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-red-600/10 border border-red-600/30 rounded-lg">
-                    <span className="text-gray-300">Takedowns This Month</span>
-                    <span className="text-red-400 font-bold">89</span>
-                  </div>
-                  <div className="flex items-center justify-between p-3 bg-green-600/10 border border-green-600/30 rounded-lg">
-                    <span className="text-gray-300">Revenue Saved</span>
+              <div className="text-lg md:text-2xl font-bold text-white mb-1">48h</div>
+              <div className="text-blue-200 text-xs md:text-sm">Take Down Time</div>
                     <span className="text-green-400 font-bold">$12,450</span>
                   </div>
-                </div>
-              </div>
+              <div className="text-lg md:text-2xl font-bold text-white mb-1">$56K+</div>
+              <div className="text-blue-200 text-xs md:text-sm">Protected</div>
             </div>
           </div>
         </div>

@@ -30,48 +30,42 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Complete <span className="text-blue-600">Protection</span> Suite
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We hunt pirates wherever they hide. Our comprehensive approach covers every corner of the internet.
+        <div className="text-center mb-12 md:mb-16 px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Comprehensive protection for your digital content with proven results
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 shadow-lg hover:shadow-xl transition-all duration-300 group"
-              >
-                <div className="bg-gradient-to-br from-slate-800 to-blue-900 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-8 h-8 text-blue-400" />
-                </div>
-
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {service.title}
-                </h3>
-
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-gray-500">
-                      <div className="w-1.5 h-1.5 bg-red-500 rounded-full mr-3"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 px-4">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-xl">
+            <Shield className="w-12 h-12 text-blue-600 mb-4" />
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">DMCA Takedowns</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
+              Fast and effective removal of pirated content from websites, file-sharing platforms, and social media.
+            </p>
+            <div className="text-sm text-blue-600 font-semibold">94% Success Rate</div>
+          </div>
+          
+          <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-xl">
+            <FileText className="w-12 h-12 text-green-600 mb-4" />
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">Legal Documentation</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
+              Professional legal notices and cease & desist letters prepared by experienced attorneys.
+            </p>
+            <div className="text-sm text-green-600 font-semibold">7+ Years Experience</div>
+          </div>
+          
+          <div className="bg-gradient-to-br from-purple-50 to-violet-100 p-8 rounded-xl">
+            <Clock className="w-12 h-12 text-purple-600 mb-4" />
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">24/7 Monitoring</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4">
+              Continuous monitoring of the internet to detect unauthorized use of your content.
+            </p>
+            <div className="text-sm text-purple-600 font-semibold">48h Response</div>
+          </div>
         </div>
 
         {/* Call to Action */}
