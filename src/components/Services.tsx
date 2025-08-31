@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, MessageCircle, HardDrive, Users } from 'lucide-react';
+import { FileText, MessageCircle, HardDrive, Users, Shield, Clock } from 'lucide-react';
 
 const Services = () => {
   const services = [

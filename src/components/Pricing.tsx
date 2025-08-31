@@ -2,6 +2,10 @@ import React from 'react';
 import { Check, Crown, Zap } from 'lucide-react';
 
 const Pricing = () => {
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const plans = [
     {
       name: 'Starter',
