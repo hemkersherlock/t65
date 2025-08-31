@@ -1,5 +1,4 @@
-@@ .. @@
-         <div className="max-w-md mx-auto">
+        <div className="max-w-md mx-auto">
            <h3 className="text-2xl font-bold text-center mb-4">Stay Informed</h3>
            <p className="text-gray-600 text-center mb-6">Get the latest security insights and breach alerts.</p>
 -          <form className="flex flex-col sm:flex-row gap-4">

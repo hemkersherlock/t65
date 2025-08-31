@@ -1,5 +1,4 @@
-@@ .. @@
-         <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto">
            <h2 className="text-3xl font-bold text-center mb-8">Report a Data Breach</h2>
            <p className="text-gray-600 text-center mb-8">Help us help you. Report suspicious activity or potential data breaches.</p>
 -          <form className="space-y-6">
