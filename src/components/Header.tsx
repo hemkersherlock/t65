@@ -61,6 +61,8 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
+            )
+            }
           <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800 py-4">
             <nav className="flex flex-col space-y-4">
               <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors px-4">
