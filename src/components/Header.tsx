@@ -13,6 +13,13 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -43,7 +50,7 @@ const Header = () => {
               Contact
             </a>
             <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={scrollToContact}
               className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors"
             >
               Secure My Course
@@ -51,18 +58,16 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-  <header className="bg-slate-900 text-white sticky top-0 z-50">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-white"
-      <div className="flex justify-between items-center py-3 md:py-4">
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          <span className="text-lg md:text-xl font-bold">NeverLeaked</span>
+          </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-            )
-            }
           <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800 py-4">
             <nav className="flex flex-col space-y-4">
               <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors px-4">
@@ -77,13 +82,13 @@ const Header = () => {
               <a href="#contact" className="text-gray-300 hover:text-white transition-colors px-4">
                 Contact
               </a>
-        <nav className="hidden lg:flex space-x-8">
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              <button
+                onClick={scrollToContact}
                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors mx-4"
               >
                 Secure My Course
               </button>
-        <button className="lg:hidden">
+            </nav>
           </div>
         )}
       </div>
