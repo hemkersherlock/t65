@@ -31,9 +31,10 @@ const Pricing = () => {
       period: '/month',
       description: 'Ideal for established educators and coaches',
       features: [
-        'Monitor up to 10 courses',
+        'Real-time monitoring for 1 active course',
         'Advanced takedown network',
         'Telegram monitoring',
+        'Unlimited takedowns',
         'Priority support (24hr)',
         'Weekly detailed reports',
         'File-sharing removals',
