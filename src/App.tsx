@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Problem from './components/Problem';
 import Hero from './components/Hero';
 import StatsBar from './components/StatsBar';
+import SocialProofBar from './components/SocialProofBar';
 import HowItWorks from './components/HowItWorks';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
@@ -16,6 +17,7 @@ function App() {
       <Problem />
       <Hero />
       <StatsBar />
+      <SocialProofBar />
       <HowItWorks />
       <Testimonials />
       <Pricing />

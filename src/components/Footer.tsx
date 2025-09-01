@@ -92,6 +92,16 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          
+          <div className="flex flex-wrap justify-center items-center gap-4 mt-6 pt-6 border-t border-slate-800">
+            <span className="text-gray-400 text-xs">SSL Secured</span>
+            <span className="text-gray-600">•</span>
+            <span className="text-gray-400 text-xs">DMCA Certified</span>
+            <span className="text-gray-600">•</span>
+            <span className="text-gray-400 text-xs">SOC2 Compliant</span>
+            <span className="text-gray-600">•</span>
+            <span className="text-gray-400 text-xs">Legal Team Verified</span>
+          </div>
         </div>
       </div>
     </footer>

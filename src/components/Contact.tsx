@@ -1,4 +1,5 @@
 import React from 'react';
+import { Check } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -75,6 +76,27 @@ export default function Contact() {
               >
                 Start Emergency Protection
               </button>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 mt-4">
+                <div className="flex items-center">
+                  <Check className="w-4 h-4 text-green-600 mr-1" />
+                  <span>Free scan</span>
+                </div>
+                <div className="flex items-center">
+                  <Check className="w-4 h-4 text-green-600 mr-1" />
+                  <span>2-hour response</span>
+                </div>
+                <div className="flex items-center">
+                  <Check className="w-4 h-4 text-green-600 mr-1" />
+                  <span>No spam ever</span>
+                </div>
+              </div>
+
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4 mt-6">
+                <p className="text-red-700 text-sm font-medium text-center">
+                  ⚠️ Every hour of delay = $200+ in lost sales
+                </p>
+              </div>
 
               <p className="text-center text-gray-500 text-xs md:text-sm mt-4">
                 Response within 2 hours. Emergency hotline available 24/7.
