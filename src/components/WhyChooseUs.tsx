@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       icon: Clock,
       title: 'Lightning Fast',
       description: 'Most takedowns completed within 24 hours vs. industry average of 7-14 days.',
-      stat: '24hrs',
+      stat: '48hrs',
       statLabel: 'Avg Response'
     },
     {
