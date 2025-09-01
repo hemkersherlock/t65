@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Mail, Phone, MapPin } from 'lucide-react';
+import { Shield, Mail, Phone, MapPin, Lock, FileCheck, Award, Users } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -93,14 +93,24 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="flex flex-wrap justify-center items-center gap-4 mt-6 pt-6 border-t border-slate-800">
-            <span className="text-gray-400 text-xs">SSL Secured</span>
-            <span className="text-gray-600">•</span>
-            <span className="text-gray-400 text-xs">DMCA Certified</span>
-            <span className="text-gray-600">•</span>
-            <span className="text-gray-400 text-xs">SOC2 Compliant</span>
-            <span className="text-gray-600">•</span>
-            <span className="text-gray-400 text-xs">Legal Team Verified</span>
+          {/* Security Badges */}
+          <div className="flex flex-wrap justify-center items-center gap-6 mt-8 pt-6 border-t border-slate-800">
+            <div className="flex items-center bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">
+              <Lock className="w-4 h-4 mr-2 text-green-400" />
+              <span className="text-gray-300 text-sm font-medium">SSL Secured</span>
+            </div>
+            <div className="flex items-center bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">
+              <FileCheck className="w-4 h-4 mr-2 text-blue-400" />
+              <span className="text-gray-300 text-sm font-medium">DMCA Certified</span>
+            </div>
+            <div className="flex items-center bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">
+              <Award className="w-4 h-4 mr-2 text-purple-400" />
+              <span className="text-gray-300 text-sm font-medium">SOC2 Compliant</span>
+            </div>
+            <div className="flex items-center bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">
+              <Users className="w-4 h-4 mr-2 text-yellow-400" />
+              <span className="text-gray-300 text-sm font-medium">Legal Team Verified</span>
+            </div>
           </div>
         </div>
       </div>

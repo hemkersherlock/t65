@@ -3,11 +3,11 @@ import { Check } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-12 md:py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
       <div className="container mx-auto px-6">
         <div className="max-w-lg mx-auto px-4">
           <div className="bg-white rounded-2xl p-8 shadow-2xl">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
               Get Immediate Protection
             </h2>
             
@@ -22,7 +22,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400 text-sm md:text-base"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200"
                   placeholder="Enter your full name"
                   required
                 />
@@ -36,7 +36,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400 text-sm md:text-base"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200"
                   placeholder="your@email.com"
                   required
                 />
@@ -50,7 +50,7 @@ export default function Contact() {
                   type="url"
                   id="course_link"
                   name="course_link"
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400 text-sm md:text-base"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200"
                   placeholder="https://your-course-url.com"
                   required
                 />
@@ -64,7 +64,7 @@ export default function Contact() {
                   id="piracy_description"
                   name="piracy_description"
                   rows={4}
-                  className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400 resize-none text-sm md:text-base"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 resize-none transition-all duration-200"
                   placeholder="Where did you find your content? Include any relevant links..."
                   required
                 ></textarea>
@@ -72,12 +72,12 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white py-3 md:py-4 px-4 md:px-6 rounded-xl font-bold text-sm md:text-base transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl"
+                className="w-full bg-red-600 hover:bg-red-700 text-white py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl"
               >
                 Start Emergency Protection
               </button>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 mt-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600 mt-6">
                 <div className="flex items-center">
                   <Check className="w-4 h-4 text-green-600 mr-1" />
                   <span>Free scan</span>
@@ -98,7 +98,7 @@ export default function Contact() {
                 </p>
               </div>
 
-              <p className="text-center text-gray-500 text-xs md:text-sm mt-4">
+              <p className="text-center text-gray-500 text-sm mt-4">
                 Response within 2 hours. Emergency hotline available 24/7.
               </p>
             </form>

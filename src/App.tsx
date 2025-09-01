@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import Problem from './components/Problem';
 import Hero from './components/Hero';
-import StatsBar from './components/StatsBar';
 import SocialProofBar from './components/SocialProofBar';
 import Testimonials from './components/Testimonials';
 import HowItWorks from './components/HowItWorks';
@@ -14,9 +12,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <Problem />
       <Hero />
-      <StatsBar />
       <SocialProofBar />
       <Testimonials />
       <HowItWorks />

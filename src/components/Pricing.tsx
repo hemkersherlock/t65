@@ -62,50 +62,57 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-12 md:py-20 bg-gray-50">
+    <section id="pricing" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 md:mb-16 px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
-          <p className="text-lg md:text-xl text-gray-600">Choose the protection level that's right for you</p>
+        <div className="text-center mb-16 px-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
+          <p className="text-xl text-gray-600">Choose the protection level that's right for you</p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto px-4">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
           {plans.map((plan, index) => {
             const Icon = plan.icon;
             return (
               <div
                 key={index}
-                className={`bg-white rounded-xl shadow-lg p-8 border-2 ${
+                className={`bg-white rounded-xl shadow-lg border-2 flex flex-col ${
                   plan.isPopular ? 'border-blue-500 relative' : 'border-gray-200'
                 }`}
               >
                 {plan.isPopular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-blue-500 text-white px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold">Most Popular</span>
-                  </div>
+                  <>
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+                    </div>
+                    <div className="absolute -top-2 -right-2">
+                      <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">BEST VALUE</span>
+                    </div>
+                  </>
                 )}
                 
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">{plan.name}</h3>
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
-                  {plan.price}<span className="text-base md:text-lg text-gray-500">{plan.period}</span>
+                <div className="p-8 flex-grow flex flex-col">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{plan.name}</h3>
+                  <div className="text-4xl font-bold text-blue-600 mb-6">
+                    {plan.price}<span className="text-lg text-gray-500">{plan.period}</span>
+                  </div>
+                  <p className="text-gray-600 mb-6">{plan.description}</p>
+                  
+                  <ul className="space-y-3 mb-8 flex-grow">
+                    {plan.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center text-gray-600">
+                        <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <button 
+                    onClick={scrollToContact}
+                    className={`w-full font-bold py-3 px-6 rounded-lg transition duration-200 mt-auto ${plan.buttonClass}`}
+                  >
+                    {plan.buttonText}
+                  </button>
                 </div>
-                <p className="text-gray-600 mb-6">{plan.description}</p>
-                
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm md:text-base text-gray-600">
-                      <Check className="w-5 h-5 text-green-500 mr-3" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                
-                <button 
-                  onClick={scrollToContact}
-                  className={`w-full font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition duration-200 text-sm md:text-base ${plan.buttonClass}`}
-                >
-                  {plan.buttonText}
-                </button>
               </div>
             );
           })}
@@ -113,12 +120,7 @@ const Pricing = () => {
 
         {/* Trust Elements */}
         <div className="text-center mt-16 space-y-6">
-          <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3 mb-4">
-            <Check className="w-5 h-5 text-green-600 mr-2" />
-            <span className="text-green-800 font-semibold">30-Day Money-Back Guarantee</span>
-          </div>
-          
-          <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3 mb-4">
+          <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3">
             <Check className="w-5 h-5 text-green-600 mr-2" />
             <span className="text-green-800 font-semibold">30-Day Money-Back Guarantee</span>
           </div>
