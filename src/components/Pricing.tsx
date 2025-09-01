@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Crown, Zap } from 'lucide-react';
+import { Check, Crown, Zap, Phone } from 'lucide-react';
 
 const Pricing = () => {
   const scrollToContact = () => {
@@ -8,7 +8,7 @@ const Pricing = () => {
 
   const plans = [
     {
-      name: 'Starter',
+      name: 'Starter', 
       icon: Zap,
       price: '$99',
       period: '/month',
@@ -25,7 +25,7 @@ const Pricing = () => {
       buttonClass: 'bg-blue-600 hover:bg-blue-700 text-white'
     },
     {
-      name: 'Pro',
+      name: 'Professional',
       icon: Crown,
       price: '$299',
       period: '/month',
@@ -40,7 +40,7 @@ const Pricing = () => {
         'File-sharing removals'
       ],
       isPopular: true,
-      buttonText: 'Choose Pro',
+      buttonText: 'Choose Professional',
       buttonClass: 'bg-red-600 hover:bg-red-700 text-white'
     },
     {
@@ -50,13 +50,10 @@ const Pricing = () => {
       period: '',
       description: 'For institutions and large course academies',
       features: [
-        'Unlimited course monitoring',
+        'Everything in Professional',
         'Dedicated account manager',
-        'Legal consultation included',
-        'Custom piracy intelligence',
-        'API access & integrations',
-        'White-label reporting',
-        'SLA guarantees'
+        'Custom legal strategies',
+        'Phone support'
       ],
       isPopular: false,
       buttonText: 'Contact Sales',
@@ -73,110 +70,64 @@ const Pricing = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto px-4">
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Basic</h3>
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">$99<span className="text-base md:text-lg text-gray-500">/case</span></div>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Single DMCA takedown
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                48-hour take down time
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Email support
-              </li>
-            </ul>
-            <button 
-              onClick={scrollToContact}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition duration-200 text-sm md:text-base"
-            >
-              Get Started
-            </button>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-blue-500 relative">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-blue-500 text-white px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold">Most Popular</span>
-            </div>
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Professional</h3>
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">$299<span className="text-base md:text-lg text-gray-500">/month</span></div>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Real-time monitoring for 1 active course
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Unlimited takedowns
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Advanced takedown network
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Telegram & forum monitoring
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Priority 24/7 support
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Weekly detailed reports
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                File-sharing removals
-              </li>
-            </ul>
-            <button 
-              onClick={scrollToContact}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition duration-200 text-sm md:text-base"
-            >
-              Get Started
-            </button>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Enterprise</h3>
-            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">$999<span className="text-base md:text-lg text-gray-500">/month</span></div>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Everything in Professional
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Dedicated account manager
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Custom legal strategies
-              </li>
-              <li className="flex items-center text-sm md:text-base text-gray-600">
-                <Check className="w-5 h-5 text-green-500 mr-3" />
-                Phone support
-              </li>
-            </ul>
-            <button 
-              onClick={scrollToContact}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition duration-200 text-sm md:text-base"
-            >
-              Contact Sales
-            </button>
-          </div>
+          {plans.map((plan, index) => {
+            const Icon = plan.icon;
+            return (
+              <div
+                key={index}
+                className={`bg-white rounded-xl shadow-lg p-8 border-2 ${
+                  plan.isPopular ? 'border-blue-500 relative' : 'border-gray-200'
+                }`}
+              >
+                {plan.isPopular && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <span className="bg-blue-500 text-white px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold">Most Popular</span>
+                  </div>
+                )}
+                
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">{plan.name}</h3>
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
+                  {plan.price}<span className="text-base md:text-lg text-gray-500">{plan.period}</span>
+                </div>
+                <p className="text-gray-600 mb-6">{plan.description}</p>
+                
+                <ul className="space-y-3 mb-8">
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-sm md:text-base text-gray-600">
+                      <Check className="w-5 h-5 text-green-500 mr-3" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                
+                <button 
+                  onClick={scrollToContact}
+                  className={`w-full font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition duration-200 text-sm md:text-base ${plan.buttonClass}`}
+                >
+                  {plan.buttonText}
+                </button>
+              </div>
+            );
+          })}
         </div>
 
-        {/* Money Back Guarantee */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3">
+        {/* Trust Elements */}
+        <div className="text-center mt-16 space-y-6">
+          <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3 mb-4">
             <Check className="w-5 h-5 text-green-600 mr-2" />
             <span className="text-green-800 font-semibold">30-Day Money-Back Guarantee</span>
+          </div>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-gray-600">
+            <div className="flex items-center">
+              <span className="text-yellow-500 mr-2">⚡</span>
+              <span>Setup takes 5 minutes • Protection starts immediately</span>
+            </div>
+            
+            <div className="flex items-center">
+              <Phone className="w-4 h-4 mr-2 text-blue-600" />
+              <span>Questions? Call (831) 263-6018</span>
+            </div>
           </div>
         </div>
       </div>
