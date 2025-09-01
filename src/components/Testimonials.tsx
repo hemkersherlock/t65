@@ -7,10 +7,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Trusted by <span className="text-blue-600">Elite</span> Creators
+            Join 1,200+ Creators Who Stopped Revenue Theft
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join thousands of successful course creators who've taken back control of their content.
+            Real results from real course creators who took action.
           </p>
         </div>
         
@@ -36,18 +36,13 @@ const Testimonials = () => {
               
               <div className="bg-white rounded-2xl rounded-bl-md p-4 shadow-sm max-w-xs ml-auto">
                 <p className="text-gray-800 text-sm leading-relaxed">
-                  OMG you guys found my course on 6 different Telegram groups!! 😱 
+                  Found my $2,000 course on 6 Telegram groups! Recovered $15K in first month 🙏
                 </p>
               </div>
               
-              <div className="bg-white rounded-2xl rounded-bl-md p-4 shadow-sm max-w-xs ml-auto">
-                <p className="text-gray-800 text-sm leading-relaxed">
-                  Already recovered $8K this month. Thank you so much! 🙏
-                </p>
-                <div className="flex items-center justify-end mt-2 space-x-1">
-                  <span className="text-xs text-gray-500">3:12 PM</span>
-                  <CheckCheck className="w-4 h-4 text-blue-500" />
-                </div>
+              <div className="flex items-center justify-end mt-2 space-x-1">
+                <span className="text-xs text-gray-500">3:12 PM</span>
+                <CheckCheck className="w-4 h-4 text-blue-500" />
               </div>
             </div>
             
@@ -67,7 +62,7 @@ const Testimonials = () => {
                 <span className="font-semibold text-gray-900 text-sm">Marcus R.</span>
                 <span className="text-xs text-gray-500">marcus.fitness@gmail.com</span>
               </div>
-              <p className="text-sm font-medium text-gray-800">Subject: You guys are INCREDIBLE! 🔥</p>
+              <p className="text-sm font-medium text-gray-800">Subject: You guys saved my business! 🔥</p>
               <span className="text-xs text-gray-500">Today 9:23 AM</span>
             </div>
             
@@ -78,14 +73,13 @@ const Testimonials = () => {
               
               <div className="text-sm text-gray-800 leading-relaxed space-y-2">
                 <p>Hey team,</p>
-                <p>Just wanted to say THANK YOU! You removed 23 pirated copies in 48 hours. My sales literally doubled overnight.</p>
-                <p>Finally sleeping peacefully knowing my content is protected 😴</p>
+                <p>Removed 47 pirated copies in 48hrs. Revenue doubled overnight. Finally sleeping peacefully 😴</p>
                 <p>- Marcus</p>
               </div>
               
               <div className="mt-4 pt-3 border-t border-gray-100">
                 <p className="text-sm font-medium text-gray-700">Fitness Entrepreneur</p>
-                <p className="text-xs text-gray-500">Complete Body Transformation Course</p>
+                <p className="text-xs text-gray-500">$1,500 Transformation Course</p>
               </div>
             </div>
           </div>
@@ -112,20 +106,14 @@ const Testimonials = () => {
               
               <div className="bg-blue-600 rounded-2xl rounded-br-md p-4 max-w-xs ml-auto">
                 <p className="text-white text-sm leading-relaxed">
-                  Your team is absolutely professional! Found piracy on sites I didn't even know existed 🕵️‍♀️
-                </p>
-              </div>
-              
-              <div className="bg-blue-600 rounded-2xl rounded-br-md p-4 max-w-xs ml-auto">
-                <p className="text-white text-sm leading-relaxed">
-                  My nursing certification course is finally safe. Worth every penny! 💪
+                  Professional team found piracy I didn't know existed. My nursing course is finally protected 💪
                 </p>
               </div>
             </div>
             
             <div className="mt-4 pt-3 border-t border-slate-700">
               <p className="text-sm font-medium text-slate-200">Medical Education Specialist</p>
-              <p className="text-xs text-slate-400">Advanced Nursing Certification</p>
+              <p className="text-xs text-slate-400">$3,000 Certification Program</p>
             </div>
           </div>
         </div>
