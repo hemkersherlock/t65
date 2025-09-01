@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Problem from './components/Problem';
 import Hero from './components/Hero';
+import StatsBar from './components/StatsBar';
 import HowItWorks from './components/HowItWorks';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Problem />
       <Hero />
+      <StatsBar />
       <HowItWorks />
       <Services />
       <WhyChooseUs />

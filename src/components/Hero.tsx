@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, AlertTriangle, Lock } from 'lucide-react';
+import { Shield } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -19,50 +19,23 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            {/* Alert Banner */}
-            <div className="inline-flex items-center bg-red-600/10 border border-red-600/20 rounded-full px-4 py-2 mb-6">
-              <AlertTriangle className="w-4 h-4 text-red-400 mr-2" />
-              <span className="text-red-300 text-sm font-medium">Course piracy costs creators $2.8B annually</span>
-            </div>
-
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Protect Your Course.
-              <span className="text-red-500 block">Take Back Your Revenue.</span>
+              Stop Course Piracy
+              <span className="text-red-500 block">in 48 Hours</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8 max-w-2xl">
-              NeverLeaked hunts down pirated versions of your online courses across Telegram channels, 
-              file-sharing sites, forums, and private groups. We eliminate theft so you can focus on creating.
+              We hunt pirates across Telegram, file-sharing sites, and private groups so you can focus on creating.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col items-center lg:items-start gap-4 mb-12">
               <button 
                 onClick={scrollToContact}
                 className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
               >
-                Secure My Course
+                Secure My Course Now
               </button>
-              <button 
-                onClick={scrollToContact}
-                className="border border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300"
-              >
-                View Demo
-              </button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-8 text-gray-400 text-sm">
-              <div className="flex items-center">
-                <Shield className="w-5 h-5 text-green-400 mr-2" />
-                <span>94% Takedown Success Rate</span>
-              </div>
-              <div className="flex items-center">
-                <Lock className="w-5 h-5 text-blue-400 mr-2" />
-                <span>48h Average Takedown</span>
-              </div>
-              <div>
-                <span className="font-semibold text-white">$12.4K+</span> Revenue Saved This Month
-              </div>
+              <p className="text-gray-400 text-sm">Starting at $299/month</p>
             </div>
           </div>
 
