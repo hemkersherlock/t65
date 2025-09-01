@@ -19,6 +19,10 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
+            <div className="inline-flex items-center bg-red-600/20 border border-red-500/50 rounded-full px-4 py-2 mb-6">
+              <span className="text-red-300 text-sm font-semibold">🚨 EMERGENCY RESPONSE AVAILABLE</span>
+            </div>
+            
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Stop Course Piracy
               <span className="text-red-500 block">in 48 Hours</span>

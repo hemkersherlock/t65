@@ -118,6 +118,11 @@ const Pricing = () => {
             <span className="text-green-800 font-semibold">30-Day Money-Back Guarantee</span>
           </div>
           
+          <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3 mb-4">
+            <Check className="w-5 h-5 text-green-600 mr-2" />
+            <span className="text-green-800 font-semibold">30-Day Money-Back Guarantee</span>
+          </div>
+          
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-gray-600">
             <div className="flex items-center">
               <span className="text-yellow-500 mr-2">⚡</span>
