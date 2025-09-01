@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
       icon: Scale,
       title: 'Legal Expertise',
       description: 'Former entertainment lawyers and IP specialists handle your cases personally.',
-      stat: '15+',
+      stat: '7+',
       statLabel: 'Years Experience'
     },
     {
