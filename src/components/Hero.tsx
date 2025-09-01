@@ -61,7 +61,7 @@ const Hero = () => {
                 <span>48h Average Takedown</span>
               </div>
               <div>
-                <span className="font-semibold text-white">$56K+</span> Revenue Saved This Month
+                <span className="font-semibold text-white">$12.4K+</span> Revenue Saved This Month
               </div>
             </div>
           </div>
