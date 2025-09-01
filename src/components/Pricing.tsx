@@ -80,14 +80,9 @@ const Pricing = () => {
                 }`}
               >
                 {plan.isPopular && (
-                  <>
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <span className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
-                    </div>
-                    <div className="absolute -top-2 -right-2">
-                      <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">BEST VALUE</span>
-                    </div>
-                  </>
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <span className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Most Popular</span>
+                  </div>
                 )}
                 
                 <div className="p-8 flex-grow flex flex-col">
