@@ -1,31 +1,7 @@
 import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Check, CheckCheck } from 'lucide-react';
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: 'Sarah Chen',
-      title: 'Online Marketing Coach',
-      course: '$2,000 Marketing Masterclass',
-      content: 'NeverLeaked recovered $15K in stolen sales within 30 days. Found my course in Telegram groups I never knew existed.',
-      avatar: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
-    },
-    {
-      name: 'Marcus Rodriguez',
-      title: 'Fitness Entrepreneur',
-      course: 'Complete Body Transformation',
-      content: 'They removed 47 pirated copies from file-sharing sites in one week. My revenue doubled the next month.',
-      avatar: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
-    },
-    {
-      name: 'Dr. Amanda Foster',
-      title: 'Medical Education',
-      course: 'Advanced Nursing Certification',
-      content: 'Professional, fast, and effective. They understand the education space and protect intellectual property seriously.',
-      avatar: 'https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
-    }
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,37 +14,120 @@ const Testimonials = () => {
           </p>
         </div>
         
-        {/* Testimonials Grid */}
         <div className="grid lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 border border-gray-200 hover:border-blue-300 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, starIndex) => (
-                  <Star key={starIndex} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
+          {/* WhatsApp Style Testimonial */}
+          <div className="bg-gradient-to-b from-green-50 to-green-100 rounded-2xl p-6 border border-green-200 shadow-lg">
+            <div className="bg-white rounded-t-xl p-4 mb-4 shadow-sm">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">SC</span>
+                  </div>
+                  <span className="font-semibold text-gray-900">Sarah C.</span>
+                </div>
+                <span className="text-xs text-gray-500">2:47 PM</span>
               </div>
-              <Quote className="w-8 h-8 text-blue-300 mb-4" />
+            </div>
+            
+            <div className="space-y-3">
+              <div className="flex mb-2">
+                <span className="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</span>
+              </div>
               
-              <p className="text-gray-700 mb-6 leading-relaxed font-medium">
-                "{testimonial.content}"
-              </p>
-              <div className="flex items-center">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.title}</div>
-                  <div className="text-sm text-blue-600 font-medium">{testimonial.course}</div>
+              <div className="bg-white rounded-2xl rounded-bl-md p-4 shadow-sm max-w-xs ml-auto">
+                <p className="text-gray-800 text-sm leading-relaxed">
+                  OMG you guys found my course on 6 different Telegram groups!! 😱 
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-2xl rounded-bl-md p-4 shadow-sm max-w-xs ml-auto">
+                <p className="text-gray-800 text-sm leading-relaxed">
+                  Already recovered $8K this month. Thank you so much! 🙏
+                </p>
+                <div className="flex items-center justify-end mt-2 space-x-1">
+                  <span className="text-xs text-gray-500">3:12 PM</span>
+                  <CheckCheck className="w-4 h-4 text-blue-500" />
                 </div>
               </div>
             </div>
-          ))}
+            
+            <div className="mt-4 text-center">
+              <p className="text-sm font-medium text-gray-700">Marketing Coach</p>
+              <p className="text-xs text-gray-500">$2,000 Marketing Masterclass</p>
+            </div>
+          </div>
+
+          {/* Email Style Testimonial */}
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-lg overflow-hidden">
+            <div className="bg-gray-50 px-4 py-3 border-b border-gray-200">
+              <div className="flex items-center space-x-2 mb-1">
+                <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">MR</span>
+                </div>
+                <span className="font-semibold text-gray-900 text-sm">Marcus R.</span>
+                <span className="text-xs text-gray-500">marcus.fitness@gmail.com</span>
+              </div>
+              <p className="text-sm font-medium text-gray-800">Subject: You guys are INCREDIBLE! 🔥</p>
+              <span className="text-xs text-gray-500">Today 9:23 AM</span>
+            </div>
+            
+            <div className="p-4">
+              <div className="flex mb-3">
+                <span className="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</span>
+              </div>
+              
+              <div className="text-sm text-gray-800 leading-relaxed space-y-2">
+                <p>Hey team,</p>
+                <p>Just wanted to say THANK YOU! You removed 23 pirated copies in 48 hours. My sales literally doubled overnight.</p>
+                <p>Finally sleeping peacefully knowing my content is protected 😴</p>
+                <p>- Marcus</p>
+              </div>
+              
+              <div className="mt-4 pt-3 border-t border-gray-100">
+                <p className="text-sm font-medium text-gray-700">Fitness Entrepreneur</p>
+                <p className="text-xs text-gray-500">Complete Body Transformation Course</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Twitter DM Style Testimonial */}
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-6 shadow-lg text-white">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">AF</span>
+                </div>
+                <div>
+                  <span className="font-semibold">Dr. Amanda F.</span>
+                  <span className="text-slate-400 text-sm ml-2">@DrAmandaF</span>
+                </div>
+              </div>
+              <span className="text-xs text-slate-400">1h</span>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex mb-3">
+                <span className="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</span>
+              </div>
+              
+              <div className="bg-blue-600 rounded-2xl rounded-br-md p-4 max-w-xs ml-auto">
+                <p className="text-white text-sm leading-relaxed">
+                  Your team is absolutely professional! Found piracy on sites I didn't even know existed 🕵️‍♀️
+                </p>
+              </div>
+              
+              <div className="bg-blue-600 rounded-2xl rounded-br-md p-4 max-w-xs ml-auto">
+                <p className="text-white text-sm leading-relaxed">
+                  My nursing certification course is finally safe. Worth every penny! 💪
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-4 pt-3 border-t border-slate-700">
+              <p className="text-sm font-medium text-slate-200">Medical Education Specialist</p>
+              <p className="text-xs text-slate-400">Advanced Nursing Certification</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
