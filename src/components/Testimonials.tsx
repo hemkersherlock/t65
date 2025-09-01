@@ -26,13 +26,6 @@ const Testimonials = () => {
     }
   ];
 
-  const trustBadges = [
-    'Better Business Bureau A+',
-    'DMCA Certified Agent',
-    'ISO 27001 Compliant',
-    'SOC 2 Type II Certified'
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,9 +37,9 @@ const Testimonials = () => {
             Join thousands of successful course creators who've taken back control of their content.
           </p>
         </div>
-
+        
         {/* Testimonials Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -57,13 +50,11 @@ const Testimonials = () => {
                   <Star key={starIndex} className="w-5 h-5 text-yellow-400 fill-current" />
                 ))}
               </div>
-
               <Quote className="w-8 h-8 text-blue-300 mb-4" />
               
               <p className="text-gray-700 mb-6 leading-relaxed font-medium">
                 "{testimonial.content}"
               </p>
-
               <div className="flex items-center">
                 <img
                   src={testimonial.avatar}
@@ -78,23 +69,6 @@ const Testimonials = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Trust Badges */}
-        <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-white text-center mb-8">
-            Certified & Trusted
-          </h3>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {trustBadges.map((badge, index) => (
-              <div
-                key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center border border-white/20"
-              >
-                <div className="text-white font-semibold text-sm">{badge}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
