@@ -40,9 +40,6 @@ const Header = () => {
             <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors">
               How It Works
             </a>
-            <a href="#services" className="text-gray-300 hover:text-white transition-colors">
-              Services
-            </a>
             <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">
               Pricing
             </a>
@@ -72,9 +69,6 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors px-4">
                 How It Works
-              </a>
-              <a href="#services" className="text-gray-300 hover:text-white transition-colors px-4">
-                Services
               </a>
               <a href="#pricing" className="text-gray-300 hover:text-white transition-colors px-4">
                 Pricing
