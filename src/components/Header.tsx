@@ -37,10 +37,10 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/about" className="text-gray-300 hover:text-white transition-colors">
+            <a href="/#/about" className="text-gray-300 hover:text-white transition-colors">
               About
             </a>
-            <a href="/case-studies" className="text-gray-300 hover:text-white transition-colors">
+            <a href="/#/case-studies" className="text-gray-300 hover:text-white transition-colors">
               Case Studies
             </a>
             <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors">
@@ -73,10 +73,10 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800 py-4">
             <nav className="flex flex-col space-y-4">
-              <a href="/about" className="text-gray-300 hover:text-white transition-colors px-4">
+              <a href="/#/about" className="text-gray-300 hover:text-white transition-colors px-4">
                 About
               </a>
-              <a href="/case-studies" className="text-gray-300 hover:text-white transition-colors px-4">
+              <a href="/#/case-studies" className="text-gray-300 hover:text-white transition-colors px-4">
                 Case Studies
               </a>
               <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors px-4">
