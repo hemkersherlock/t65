@@ -64,4 +64,17 @@ const HowItWorks = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="text-4xl font-extrabold">100+</div>
-            <div className="opacity
+            <div className="opacity-70 mt-1 text-sm">Creators Protected</div>
+          </div>
+        </div>
+        {/* (Optional) Trusted by Logos */}
+        <div className="flex justify-center gap-7 my-10">
+          <div className="opacity-40 text-xs">Trusted by top creators & educators</div>
+          {/* Replace with logos if available */}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorks;
