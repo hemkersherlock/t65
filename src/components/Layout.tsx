@@ -11,7 +11,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ 
   children, 
-  title = "NeverLeaked - Stop Course Piracy in 48 Hours",
+  title = "NeverLeaked",
   description = "Professional anti-piracy service for online course creators. We hunt pirates across Telegram, file-sharing sites, and private groups so you can focus on creating.",
   canonical = "https://neverleaked.tech"
 }) => {
