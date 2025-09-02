@@ -22,7 +22,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200"
+                  className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200 hover:border-gray-300"
                   placeholder="Enter your full name"
                   required
                 />
@@ -36,7 +36,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200"
+                  className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200 hover:border-gray-300"
                   placeholder="your@email.com"
                   required
                 />
@@ -50,7 +50,7 @@ export default function Contact() {
                   type="url"
                   id="course_link"
                   name="course_link"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200"
+                  className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 transition-all duration-200 hover:border-gray-300"
                   placeholder="https://your-course-url.com"
                   required
                 />
@@ -64,7 +64,7 @@ export default function Contact() {
                   id="piracy_description"
                   name="piracy_description"
                   rows={4}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 resize-none transition-all duration-200"
+                  className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 placeholder-gray-400 resize-none transition-all duration-200 hover:border-gray-300"
                   placeholder="Where did you find your content? Include any relevant links..."
                   required
                 ></textarea>
@@ -72,7 +72,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl"
+                className="w-full bg-red-600 hover:bg-red-700 text-white py-5 px-6 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl"
               >
                 Start Emergency Protection
               </button>

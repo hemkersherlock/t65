@@ -75,7 +75,7 @@ const Pricing = () => {
             return (
               <div
                 key={index}
-                className={`bg-white rounded-xl shadow-lg border-2 flex flex-col ${
+                className={`bg-white rounded-xl shadow-lg border-2 flex flex-col h-full ${
                   plan.isPopular ? 'border-blue-500 relative' : 'border-gray-200'
                 }`}
               >
@@ -113,7 +113,7 @@ const Pricing = () => {
           })}
         </div>
 
-        {/* Trust Elements */}
+        {/* Single Money-Back Guarantee */}
         <div className="text-center mt-16 space-y-6">
           <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3">
             <Check className="w-5 h-5 text-green-600 mr-2" />

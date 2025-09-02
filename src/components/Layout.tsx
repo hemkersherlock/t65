@@ -58,6 +58,7 @@ const Layout: React.FC<LayoutProps> = ({
     updateOGTag('og:description', description);
     updateOGTag('og:url', canonical);
     updateOGTag('og:type', 'website');
+    updateOGTag('og:image', 'https://neverleaked.tech/og-image.jpg');
     
     // Add structured data for organization
     let structuredData = document.querySelector('#structured-data');
@@ -83,7 +84,12 @@ const Layout: React.FC<LayoutProps> = ({
       },
       "description": "Professional anti-piracy service for online course creators",
       "foundingDate": "2018",
-      "industry": "Digital Content Protection"
+      "industry": "Digital Content Protection",
+      "sameAs": [
+        "https://twitter.com/neverleaked",
+        "https://linkedin.com/company/neverleaked",
+        "https://facebook.com/neverleaked"
+      ]
     });
   }, [title, description, canonical]);
 

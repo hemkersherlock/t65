@@ -16,11 +16,11 @@ const Testimonials = () => {
         
         <div className="grid lg:grid-cols-3 gap-8">
           {/* WhatsApp Style Testimonial */}
-          <div className="bg-gradient-to-b from-green-50 to-green-100 rounded-2xl p-6 border border-green-200 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="bg-white rounded-t-xl p-4 mb-4 shadow-sm">
+          <div className="bg-gradient-to-b from-green-50 to-green-100 rounded-2xl p-6 border border-green-200 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105">
+            <div className="bg-white rounded-t-xl p-4 mb-4 shadow-md">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center shadow-md">
+                  <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center shadow-lg">
                     <span className="text-white text-sm font-bold">SC</span>
                   </div>
                   <span className="font-semibold text-gray-900">Sarah C.</span>
@@ -34,7 +34,7 @@ const Testimonials = () => {
                 <span className="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</span>
               </div>
               
-              <div className="bg-white rounded-2xl rounded-bl-md p-4 shadow-md max-w-xs ml-auto">
+              <div className="bg-white rounded-2xl rounded-bl-md p-4 shadow-lg max-w-xs ml-auto">
                 <p className="text-gray-800 text-sm leading-relaxed">
                   Found my $2,000 course on 6 Telegram groups! Recovered $15K in first month 🙏
                 </p>
@@ -53,10 +53,10 @@ const Testimonials = () => {
           </div>
 
           {/* Email Style Testimonial */}
-          <div className="bg-white rounded-2xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105">
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 px-4 py-3 border-b border-gray-200">
               <div className="flex items-center space-x-2 mb-1">
-                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shadow-sm">
+                <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shadow-md">
                   <span className="text-white text-xs font-bold">MR</span>
                 </div>
                 <span className="font-semibold text-gray-900 text-sm">Marcus R.</span>
@@ -85,10 +85,10 @@ const Testimonials = () => {
           </div>
 
           {/* Twitter DM Style Testimonial */}
-          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-6 shadow-lg text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-6 shadow-lg text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center shadow-md">
+                <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center shadow-lg">
                   <span className="text-white text-sm font-bold">AF</span>
                 </div>
                 <div>
@@ -104,7 +104,7 @@ const Testimonials = () => {
                 <span className="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</span>
               </div>
               
-              <div className="bg-blue-600 rounded-2xl rounded-br-md p-4 max-w-xs ml-auto shadow-lg">
+              <div className="bg-blue-600 rounded-2xl rounded-br-md p-4 max-w-xs ml-auto shadow-xl">
                 <p className="text-white text-sm leading-relaxed">
                   Professional team found piracy I didn't know existed. My nursing course is finally protected 💪
                 </p>

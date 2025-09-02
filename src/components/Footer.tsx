@@ -118,28 +118,28 @@ const Footer = () => {
           {/* Enhanced Security Badges */}
           <div className="flex flex-wrap justify-center items-center gap-4 mt-8 pt-6 border-t border-slate-800">
             <div className="flex items-center bg-gradient-to-r from-slate-800 to-slate-700 px-4 py-3 rounded-lg border border-slate-600 shadow-lg hover:shadow-xl transition-all duration-300">
-              <Lock className="w-5 h-5 mr-3 text-green-400" />
+              <Lock className="w-6 h-6 mr-3 text-green-400" />
               <div className="text-left">
                 <div className="text-white text-sm font-semibold">SSL Secured</div>
                 <div className="text-gray-400 text-xs">256-bit encryption</div>
               </div>
             </div>
             <div className="flex items-center bg-gradient-to-r from-slate-800 to-slate-700 px-4 py-3 rounded-lg border border-slate-600 shadow-lg hover:shadow-xl transition-all duration-300">
-              <FileCheck className="w-5 h-5 mr-3 text-blue-400" />
+              <FileCheck className="w-6 h-6 mr-3 text-blue-400" />
               <div className="text-left">
                 <div className="text-white text-sm font-semibold">DMCA Certified</div>
                 <div className="text-gray-400 text-xs">Legal compliance</div>
               </div>
             </div>
             <div className="flex items-center bg-gradient-to-r from-slate-800 to-slate-700 px-4 py-3 rounded-lg border border-slate-600 shadow-lg hover:shadow-xl transition-all duration-300">
-              <Award className="w-5 h-5 mr-3 text-purple-400" />
+              <Award className="w-6 h-6 mr-3 text-purple-400" />
               <div className="text-left">
                 <div className="text-white text-sm font-semibold">SOC2 Compliant</div>
                 <div className="text-gray-400 text-xs">Security audited</div>
               </div>
             </div>
             <div className="flex items-center bg-gradient-to-r from-slate-800 to-slate-700 px-4 py-3 rounded-lg border border-slate-600 shadow-lg hover:shadow-xl transition-all duration-300">
-              <Users className="w-5 h-5 mr-3 text-yellow-400" />
+              <Users className="w-6 h-6 mr-3 text-yellow-400" />
               <div className="text-left">
                 <div className="text-white text-sm font-semibold">Legal Team Verified</div>
                 <div className="text-gray-400 text-xs">Licensed attorneys</div>

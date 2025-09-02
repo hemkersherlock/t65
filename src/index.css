@@ -12,7 +12,7 @@
 }
 
 .animate-scroll {
-  animation: scroll 30s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 .animate-scroll:hover {
@@ -21,6 +21,6 @@
 
 @media (max-width: 768px) {
   .animate-scroll {
-    animation-duration: 20s;
+    animation-duration: 25s;
   }
 }

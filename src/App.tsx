@@ -1,25 +1,24 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import SocialProofBar from './components/SocialProofBar';
-import Testimonials from './components/Testimonials';
-import HowItWorks from './components/HowItWorks';
-import Pricing from './components/Pricing';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import About from './pages/About';
+import CaseStudies from './pages/CaseStudies';
+import LegalTeam from './pages/LegalTeam';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <Hero />
-      <SocialProofBar />
-      <Testimonials />
-      <HowItWorks />
-      <Pricing />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/legal-team" element={<LegalTeam />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+      </Routes>
+    </Router>
   );
 }
 
