@@ -9,11 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <img 
-                src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=64&h=64&fit=crop&crop=center" 
-                alt="NeverLeaked Logo" 
-                className="w-8 h-8 rounded-lg object-cover"
-              />
+              <Shield className="w-8 h-8 text-red-500" />
               <span className="text-2xl font-bold">NeverLeaked</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
