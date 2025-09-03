@@ -6,6 +6,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +63,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || !isHomePage
           ? 'bg-slate-900/95 backdrop-blur-md border-b border-slate-800'
           : 'bg-transparent'
       }`}
@@ -70,7 +71,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <Shield className="w-8 h-8 text-red-500" />
+            <img 
+              src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=64&h=64&fit=crop&crop=center" 
+              alt="NeverLeaked Logo" 
+              className="w-8 h-8 rounded-lg object-cover"
+            />
             <span className="text-xl font-bold text-white">NeverLeaked</span>
           </div>
 
