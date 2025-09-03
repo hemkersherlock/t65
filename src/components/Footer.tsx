@@ -51,11 +51,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">DMCA Takedowns</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Telegram Monitoring</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">File-Sharing Removals</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Forum Takedowns</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Legal Consultation</a></li>
+              <li><a href="/#/" className="hover:text-white transition-colors">DMCA Takedowns</a></li>
+              <li><a href="/#/" className="hover:text-white transition-colors">Telegram Monitoring</a></li>
+              <li><a href="/#/" className="hover:text-white transition-colors">File-Sharing Removals</a></li>
+              <li><a href="/#/" className="hover:text-white transition-colors">Forum Takedowns</a></li>
+              <li><a href="/#/" className="hover:text-white transition-colors">Legal Consultation</a></li>
             </ul>
           </div>
 
@@ -63,11 +63,66 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="/#/about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/#/case-studies" className="hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="/#/legal-team" className="hover:text-white transition-colors">Legal Team</a></li>
-              <li><a href="/#/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="/#/terms" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li>
+                <a 
+                  href="/#/about" 
+                  className="hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#/about';
+                  }}
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/#/case-studies" 
+                  className="hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#/case-studies';
+                  }}
+                >
+                  Case Studies
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/#/legal-team" 
+                  className="hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#/legal-team';
+                  }}
+                >
+                  Legal Team
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/#/privacy-policy" 
+                  className="hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#/privacy-policy';
+                  }}
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/#/terms" 
+                  className="hover:text-white transition-colors"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = '/#/terms';
+                  }}
+                >
+                  Terms of Service
+                </a>
+              </li>
             </ul>
           </div>
 

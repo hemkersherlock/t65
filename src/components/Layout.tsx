@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -15,7 +16,14 @@ const Layout: React.FC<LayoutProps> = ({
   description = "Professional anti-piracy service for online course creators. We hunt pirates across Telegram, file-sharing sites, and private groups so you can focus on creating.",
   canonical = "https://neverleaked.tech"
 }) => {
+  const location = useLocation();
+
   React.useEffect(() => {
+    // Scroll to top when navigating to a new page (except home page with hash)
+    if (location.pathname !== '/' || !location.hash) {
+      window.scrollTo(0, 0);
+    }
+    
     // Update document title
     document.title = title;
     
